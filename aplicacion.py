@@ -37,6 +37,12 @@ def main():
 
     if st.button("Clasificar imagen"):
       st.markdown("Imagen clasificada")
+      model = load_model()
+
+      prediction = model.predict(preprocessed_image.reshape(1,-1))
+      st.markdown(f"La imagen fue clasificada como: {prediction}")
+
+
     
 
 
