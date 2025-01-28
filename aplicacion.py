@@ -25,8 +25,5 @@ def main():
     st.image(preprocessed_image, caption = "imagen subida")
 
 
-
-
-
 if __name__ == "__main__":
   main()
